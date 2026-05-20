@@ -6,6 +6,7 @@ import Features from './components/Features'
 import RegistrationForm from './components/RegistrationForm'
 import EventForm from './components/EventForm'
 import EventList from './components/EventList'
+import EventsTable from './components/EventsTable'
 import Stats from './components/Stats'
 import VideoSection from './components/VideoSection'
 import Footer from './components/Footer'
@@ -97,6 +98,7 @@ function App() {
         deleteEvent={deleteEvent}
       />
 
+      <EventsTable />
       <VideoSection />
 
       <Footer />

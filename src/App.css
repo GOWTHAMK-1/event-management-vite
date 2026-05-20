@@ -58,6 +58,50 @@ nav a:hover {
     box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }
 
+/* Table */
+.table-section {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.table-section h2 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tr:hover {
+    background-color: #dbeafe;
+}
 /* Buttons */
 button {
     background-color: #2563eb;
