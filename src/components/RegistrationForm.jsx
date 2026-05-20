@@ -1,31 +1,64 @@
+import { useState } from 'react'
+
 function RegistrationForm() {
+
+  const [name, setName] = useState('')
+
+  const [email, setEmail] = useState('')
+
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault()
+
+    if(name === '' || email === '') {
+
+      setMessage('Please fill all fields')
+
+      return
+    }
+
+    setMessage('Registration Successful')
+
+    setName('')
+
+    setEmail('')
+  }
+
   return (
-    <section className="form-section">
 
-      <h2>Event Registration Form</h2>
+    <section className="registration-section">
 
-      <form>
+      <h2>Event Registration</h2>
+
+      <form onSubmit={handleSubmit}>
 
         <input
           type="text"
           placeholder="Enter Your Name"
-          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
 
         <input
           type="email"
           placeholder="Enter Your Email"
-          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
 
-        <input
-          type="number"
-          placeholder="Number of Tickets"
-        />
+        <button type="submit">
 
-        <button type="submit">Submit</button>
+          Register
+
+        </button>
 
       </form>
+
+      <p className="success-message">
+        {message}
+      </p>
 
     </section>
   )

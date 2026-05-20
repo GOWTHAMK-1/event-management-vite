@@ -1,7 +1,13 @@
-import { FaTicketAlt, FaUsers, FaQrcode } from 'react-icons/fa'
+import {
+  FaTicketAlt,
+  FaUsers,
+  FaQrcode
+} from 'react-icons/fa'
 
 function Features() {
+
   return (
+
     <section className="features">
 
       <h2>Platform Features</h2>
@@ -9,21 +15,39 @@ function Features() {
       <div className="feature-box">
 
         <div className="card">
+
           <FaTicketAlt className="icon" />
+
           <h3>Online Registration</h3>
-          <p>Users can register for events online.</p>
+
+          <p>
+            Register for events instantly from anywhere.
+          </p>
+
         </div>
 
         <div className="card">
+
           <FaQrcode className="icon" />
-          <h3>QR Tickets</h3>
-          <p>Secure QR code tickets for event entry.</p>
+
+          <h3>QR Code Tickets</h3>
+
+          <p>
+            Secure digital tickets with QR verification.
+          </p>
+
         </div>
 
         <div className="card">
+
           <FaUsers className="icon" />
+
           <h3>Participant Management</h3>
-          <p>Organizers can manage participants easily.</p>
+
+          <p>
+            Easily manage attendees and registrations.
+          </p>
+
         </div>
 
       </div>

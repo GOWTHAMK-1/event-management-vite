@@ -1,5 +1,7 @@
 function VideoSection() {
+
   return (
+
     <section className="video-section">
 
       <h2>Event Highlights</h2>

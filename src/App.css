@@ -1,37 +1,23 @@
-/* Body */
 body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #eef2f3, #dce7f5);
-    color: #333;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Header */
 .header {
     background-color: #1e3a5f;
     color: white;
-    text-align: center;
     padding: 20px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    text-align: center;
 }
 
 .header h1 {
     font-size: 38px;
-    letter-spacing: 1px;
 }
 
-/* Navigation */
 nav {
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 nav a {
@@ -39,43 +25,37 @@ nav a {
     text-decoration: none;
     margin: 15px;
     font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #facc15;
-    text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 42px;
     color: #1e3a5f;
 }
 
 .hero p {
     font-size: 18px;
-    margin-top: 15px;
     line-height: 1.6;
 }
 
 .hero img {
-    width: 80%;
-    max-width: 750px;
-    margin-top: 25px;
+    width: 400px;
     border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.4s;
-}
-
-.hero img:hover {
-    transform: scale(1.03);
+    margin-top: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Buttons */
@@ -83,13 +63,11 @@ button {
     background-color: #2563eb;
     color: white;
     border: none;
-    padding: 12px 28px;
-    margin-top: 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    margin-top: 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
 button:hover {
@@ -97,10 +75,10 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Features Section */
+/* Features */
 .features {
+    padding: 40px;
     text-align: center;
-    padding: 30px;
 }
 
 .features h2 {
@@ -117,10 +95,10 @@ button:hover {
 
 .card {
     background-color: white;
-    width: 260px;
+    width: 250px;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
 
@@ -128,112 +106,129 @@ button:hover {
     transform: translateY(-8px);
 }
 
-.card h3 {
-    color: #1e3a5f;
-    margin-top: 15px;
-}
-
-.card p {
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
 .icon {
     font-size: 45px;
     color: #2563eb;
 }
 
-/* Form Section */
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.stat-box h2 {
+    color: #2563eb;
+}
+
+/* Registration */
+.registration-section {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Form */
 .form-section {
     background-color: white;
-    margin: 25px;
-    padding: 25px;
+    margin: 30px;
+    padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
 }
 
-.form-section h2 {
-    color: #1e3a5f;
-}
-
-form input {
-    display: block;
-    width: 60%;
-    margin: 15px auto;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-form input:focus {
-    border-color: #2563eb;
-    outline: none;
-    box-shadow: 0px 0px 5px #2563eb;
-}
-
-/* Table Section */
-.table-section {
-    background-color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.table-section h2 {
-    text-align: center;
-    color: #1e3a5f;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-top: 20px;
 }
 
-table,
-th,
-td {
+form input {
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid gray;
 }
 
-th {
-    background-color: #2563eb;
-    color: white;
+form input:focus {
+    outline: none;
+    border-color: #2563eb;
 }
 
-th,
-td {
-    padding: 12px;
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 15px;
+}
+
+/* Event List */
+.event-list {
+    padding: 30px;
+}
+
+.event-list h2 {
     text-align: center;
+    color: #1e3a5f;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+.empty {
+    text-align: center;
+    color: gray;
 }
 
-tr:hover {
-    background-color: #dbeafe;
+/* Event Card */
+.event-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Video Section */
+.delete-btn {
+    background-color: crimson;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Video */
 .video-section {
     text-align: center;
-    margin: 30px;
-}
-
-.video-section h2 {
-    color: #1e3a5f;
+    margin: 40px;
 }
 
 video {
     width: 80%;
-    max-width: 750px;
+    max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Footer */
@@ -242,28 +237,24 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive */
+@media(max-width: 768px) {
 
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero img,
-    video {
-        width: 95%;
-    }
-
-    form input {
-        width: 90%;
-    }
-
-    .feature-box {
+    .hero {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+    }
+
+    .event-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero img {
+        width: 90%;
     }
 
     nav a {

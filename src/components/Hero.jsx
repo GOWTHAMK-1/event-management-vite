@@ -1,19 +1,27 @@
 function Hero() {
+
   return (
+
     <section className="hero">
 
-      <h2>Welcome to Online Event Booking</h2>
+      <div>
+
+        <h2>Manage Events Easily</h2>
+
+        <p>
+          Organize and manage events dynamically using React Hooks.
+        </p>
+
+        <button>
+          Explore Events
+        </button>
+
+      </div>
 
       <img
         src="/event-banner.jpg"
         alt="Event Banner"
       />
-
-      <p>
-        Easily register and manage events using our Event Management Platform.
-      </p>
-
-      <button>Register Now</button>
 
     </section>
   )
